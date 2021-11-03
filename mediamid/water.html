@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+  .mySlides {
+    display: none;
+  }
+
+  .bg1 {
+    width: 896 px;
+    font-size: 18px;
+    font-family: Microsoft JhengHei;
+    line-height: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-indent: 2 em;
+    padding: 50 px;
+    padding-top: 50 px;
+    padding-bottom: 80 px;
+    position: absolute;
+    top: 650px;
+    left: 200px;
+  }
+  .top
+  {
+    max-width:500px;
+    padding: 50px;
+    position: absolute;
+    left:150px;
+  }
+.mid{
+  position: absolute;
+  top: 1100px;
+  left:200px ;
+}
+.line{
+  position: absolute;
+  top: 580px;
+  left: 200px;
+}
+body{
+  background-color:#FFEEDD;
+}
+</style>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FF8C00;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+              <a href="studymain.html"class="navbar-brand" style="color:white;font-size: 25px;cursor:context-menu;"><b>中原讀書天地</b></a>
+          </div>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav mr-auto navbar-left">
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"style="color: white; font-size: 18px">相關連結</a>
+                <ul class="dropdown-menu">
+                  <li><a href="school.html" class="dropdown-item dropitem item">中原大學</a></li>
+                  <li><a href="itouch.html" class="dropdown-item dropitem item">中原itouch</a></li>
+                  <li><a href="newstudent.html" class="dropdown-item dropitem item">新生1網通</a></li>
+                    </ul>
+              </li>
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"style="color: white; font-size: 18px">地點</a>
+                <ul class="dropdown-menu">
+                  <li><a href="water.html" class="dropdown-item dropitem item">活水來</a></li>
+                  <li><a href="happy.html" class="dropdown-item dropitem item">樂學園</a></li>
+                  <li><a href="bookroom.html" class="dropdown-item dropitem item">圖書館</a></li>
+                    </ul>
+              </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                          <a href="vedio.html" class=" nav-link" style="color: white; font-size: 18px">關於影片</a>
+                         </li>
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="us.html" class=" nav-link" style="color: white; font-size: 18px">認識我們</a>
+              </li>
+              <li class="dropdown" style="margin-left: 80px">
+                              <a href="contactus.html" class=" nav-link" style="color: white; font-size: 18px">聯繫我們</a>
+
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="top" >
+    <img class="mySlides" src="活水來/3.jpg" style="width:800px">
+    <img class="mySlides" src="活水來/1.jpg" style="width:800px">
+    <img class="mySlides" src="活水來/2.jpg" style="width:800px">
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+  <div class="line">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+   
+
+
+  </div>
+  <div class="bg1">
+    <img src="12.png" width="600px    "> <br><br>
+    這裡提供6間獨立的預約討論空間，學生可以在這邊進行小組討論或實作。各討論室配備液晶螢幕 <br>
+    、白板，另有筆記型電腦可借用。討論室內禁止飲 食然後可以提前在線上預約，以免臨時要約卻  <br>
+    都被約滿了。除此之外活水來討論室外面還有2張自由入座的桌子，適合沒有帶學生證的人來自習 <br>
+     、使用自己的筆記型電腦等，因為牆上都有插座喔!人數2-3人的來討論課業做報告，也是很適合 <br> 的， 這邊也都是禁止飲食的喔!所以如果有帶飲料就要放在討論室外面的白色平台上。
+
+
+    <br><br>
+  <img src="11.png" width="600px""><br><br>
+    週一至週五： 09：00 ~ 20：00 <br>
+    週六： 09：00 ~ 17：00
+  </div>
+  <div class="mid">
+   <img src="22.png" width="600px">
+    <br>
+    <img src="111.png">
+  </div>
+</body>
+
+</html>

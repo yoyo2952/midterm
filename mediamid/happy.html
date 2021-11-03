@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+          .bg1 {
+    width: 896 px;
+    font-size: 18px;
+    font-family: Microsoft JhengHei;
+    line-height: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-indent: 2 em;
+    padding: 50 px;
+    padding-top: 25 px;
+    padding-bottom: 80 px;
+  }
+  .zoom>div
+		{
+		  transform:scale(1,1);
+		  transition: all 0.2s ease-out;
+
+		}
+
+		.zoom>div:hover
+		{
+		  transform:scale(1.05,1.05);
+		  box-shadow: 5px 5px 8px 0px   #ADADAD;
+		}
+    .tx1 {
+    width: 896 px;
+    font-size: 18px;
+    font-family: Microsoft JhengHei;
+    line-height: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-indent: 2 em;
+    padding: 50 px;
+    padding-top: 50 px;
+    padding-bottom: 80 px;
+    position: absolute;
+    top: 70px;
+    left: px;
+  }
+  .top
+  {
+    max-width:500px;
+    padding: 50px;
+    position: absolute;
+    left:150px ;
+  }
+.mid{
+  position: absolute;
+  top: 950px;
+  left:200px ;
+}
+.line{
+  position: absolute;
+  top: 720px;
+  left: 200px;
+}
+body{
+  background-color:#FFEEDD;
+}
+.ad{
+  position: absolute;
+  top: 450px;
+  left: px;
+}
+    </style>
+</head>
+<body> 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FF8C00;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+              <a href="studymain.html"class="navbar-brand" style="color:white;font-size: 25px;cursor:context-menu;"><b>中原讀書天地</b></a>
+          </div>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav mr-auto navbar-left">
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"style="color: white; font-size: 18px">相關連結</a>
+                <ul class="dropdown-menu">
+                  <li><a href="school.html" class="dropdown-item dropitem item">中原大學</a></li>
+                  <li><a href="itouch.html" class="dropdown-item dropitem item">中原itouch</a></li>
+                  <li><a href="newstudent.html" class="dropdown-item dropitem item">新生1網通</a></li>
+                    </ul>
+              </li>
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"style="color: white; font-size: 18px">地點</a>
+                <ul class="dropdown-menu">
+                  <li><a href="water.html" class="dropdown-item dropitem item">活水來</a></li>
+			            <li><a href="happy.html" class="dropdown-item dropitem item">樂學園</a></li>
+			            <li><a href="bookroom.html" class="dropdown-item dropitem item">圖書館</a></li>
+                    </ul>
+              </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                          <a href="vedio.html" class=" nav-link" style="color: white; font-size: 18px">關於影片</a>
+                         </li>
+              <li class="dropdown" style="margin-left: 80px">
+               <a href="us.html" class=" nav-link" style="color: white; font-size: 18px">認識我們</a>
+              </li>
+              <li class="dropdown" style="margin-left: 80px">
+                              <a href="contactus.html" class=" nav-link" style="color: white; font-size: 18px">聯繫我們</a>
+
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="top" >
+    <img class="mySlides" src="自在行/2.JPG" style="width:800px">
+    <img class="mySlides" src="自在行/1.JPG" style="width:800px">
+    <img class="mySlides" src="自在行/3.JPG" style="width:800px">
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+  <div class="line">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+    <img src="123.png" width="200px" height="80px">
+   
+    <div class="tx1">
+     <img src="14.png" width="600px"><br><br>
+    這裡設有不同形式的學習空間，有沙發的座位可以讓人稍微放鬆休息(如果真的很累的通勤學生可以來這邊休息養精蓄銳) <br> 
+    ，也有2人、3人或是多人一桌的位置，提供學生個人或團體自主學習(可以做海報的塗鴉)，考前衝刺、認真作業或是使用 <br>
+     電腦做報告，因為這裡很多位置都有插座可以充電，真的很方便，同時本館播放輕音樂讓同學能輕鬆自習，亦可讓同學在 <br> 
+     這邊『輕聲』的討論課業。另外這邊還可以領取學習腳蹤喔!戶外那邊可以飲食或是做作業、討論等、只要記得把垃圾帶 <br> 
+     走保持桌面整潔就行了。因為空氣流通所以不喜歡密閉式的學生也可 以選擇使用這個地方。<br><br>
+<img src="11.png" width="600px"> <br> <br>
+星期一至星期五：09：00-20：00 <br>
+星期六：09：00-17：00
+</div>
+<div class="ad">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<style type="text/css">
+    .zoom>div {
+        transform: scale(1, 1);
+        transition: all 0.2s ease-out;
+
+    }
+
+    .zoom>div:hover {
+        transform: scale(1.05, 1.05);
+        box-shadow: 5px 5px 8px 0px #ADADAD;
+    }
+
+    .top {
+        max-width: 500px;
+        padding: 50px;
+        position: absolute;
+        left: 150px;
+    }
+
+    .mid {
+        position: absolute;
+        top: 750px;
+        left: 200px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 800px;
+        left: 200px;
+    }
+
+    .line {
+        position: absolute;
+        top: 570px;
+        left: 200px;
+    }
+
+    .name {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+
+    .tx1 {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+
+    .phone {
+        position: absolute;
+        top: 50px;
+        left: 210px;
+    }
+
+    .email {
+        position: absolute;
+        top: 50px;
+        left: 500px;
+    }
+
+    .tx2 {
+        position: absolute;
+        top: 50px;
+        left: 300px;
+    }
+
+    .tx3 {
+        position: absolute;
+        top: 50px;
+        left: 610px;
+    }
+
+    .ti {
+        position: absolute;
+        top: 130px;
+        left: 0px;
+    }
+
+    .tx4 {
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
+
+    .nl {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+    }
+
+    .tx5 {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    .b1{
+        position: absolute;
+        top: 400px;
+        left: 100px;
+        bottom: 80px;
+    }
+    .b2{
+        position: absolute;
+        top: 400px;
+        left: 200px;
+        bottom: 80px;
+    }
+    .call{
+        position: absolute;
+        top: 650px;
+        left: 200px;
+    }
+</style>
+
+
+<body style="background-color:#FFEEDD">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FF8C00;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="studymain.html" class="navbar-brand"
+                        style="color:white;font-size: 25px;cursor:context-menu;"><b>中原讀書天地</b></a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto navbar-left">
+                        <li class="dropdown" style="margin-left: 80px">
+                            <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"
+                                style="color: white; font-size: 18px">相關連結</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="school.html" class="dropdown-item dropitem item">中原大學</a></li>
+			                    <li><a href="itouch.html" class="dropdown-item dropitem item">中原itouch</a></li>
+			                    <li><a href="newstudent.html" class="dropdown-item dropitem item">新生1網通</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                            <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"
+                                style="color: white; font-size: 18px">地點</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="water.html" class="dropdown-item dropitem item">活水來</a></li>
+			                    <li><a href="happy.html" class="dropdown-item dropitem item">樂學園</a></li>
+			                    <li><a href="bookroom.html" class="dropdown-item dropitem item">圖書館</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                            <a href="vedio.html" class=" nav-link" style="color: white; font-size: 18px">關於影片</a>
+                        </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                            <a href="us.html" class=" nav-link" style="color: white; font-size: 18px">認識我們</a>
+                        </li>
+                        <li class="dropdown" style="margin-left: 80px">
+                            <a href="contactus.html" class=" nav-link" style="color: white; font-size: 18px">聯繫我們</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <div class="top"><img class="mySlides" src="學校/1.jpg" style="width:800px" height="450px
+    ">
+
+        <img class="mySlides" src="學校/3.jpg" style="width:800px" height="450px">
+
+        <img class="mySlides" src="學校/2.jpg" style="width:800px" height="450px">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <div class="line">
+        <img src="123.png" width="200px" height="80px">
+        <img src="123.png" width="200px" height="80px">
+        <img src="123.png" width="200px" height="80px">
+        <img src="123.png" width="200px" height="80px">
+
+
+
+    </div>
+
+    </div>
+    <div class="call">
+    <img src="15.png" width="600px"></div>
+    <form class="mid">
+
+
+
+        <div class="name"><img src="name.png" width="300px"></div>
+        <div class="tx1"><input type="text" name="user-name" style="width: 100px;"></div>
+        <div class="phone"><img src="phone.png" width="300px"> </div>
+        <div class="tx2"> <input type="text" name="user-name"></div>
+        <div class="email"><img src="email.png" width="300px"></div>
+        <div class="tx3"><input type="text" name="user-name"></div>
+
+
+
+        <div class="ti"><img src="title.png" width="300px"> </div>
+        <div class="tx4"><input type="text" name="user-name" style="width: 700px;" ></div>
+        <br>
+
+
+        <div class="nl"> <img src="n1.png" width="300px" ></div>
+        <div class="tx5"><textarea name="" id="" cols="95" rows="5"></textarea></div>
+
+      
+
+        <div class="b1">
+            <input type="submit" style="border-style:none;background-color:#FF8800;border-radius:15px;"></div>
+        <div class="b2">
+            <input type="reset"  style="border-style:none;background-color:#FF8800;border-radius:15px;"></div>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
